@@ -4,14 +4,16 @@ const app = express()
 const port = 3003
 const clientId = '<client_id>'
 const clientSecret = '<client_secret>'
+// Sandbox URL: "https://app-sandbox.columnapi.com/v1/users"
+// Production URL: "https://app.columnapi.com/v1/users"
 const columnUrl = "https://sandbox.columnapi.com/v1/users"
-// const columnUrl = "http://localhost:3000/v1/users"
 
 app.get('/token', (req, res) => {
     let apiKey = `${clientId}:${clientSecret}`;
     let auth = Buffer.from(apiKey).toString('base64')
 
-    const body = JSON.stringify({
+    // An example user with mock data
+    let user = {
         user_identifier: new Date().getTime(),
         first_name: "test",
         last_name: "test",
@@ -25,7 +27,9 @@ app.get('/token', (req, res) => {
             state: "test",
             zip_code: "test"
         }
-    })
+    }
+
+    const body = JSON.stringify(user)
 
     const headers = {
         Authorization: `Basic ${auth}`,
