@@ -20,6 +20,13 @@ backend. The application includes an endpoint,`/token`, for creating a mock user
 returning the user token.
 
 ### Starting The Sample Backend
+Requirements:
+- Update these values in `app.js` with your Column Tax client id and secret key
+```javascript
+const clientId = '<client_id>'
+const clientSecret = '<client_secret>'
+```
+Start Server:
 ```shell
 cd server
 yarn
@@ -34,6 +41,7 @@ will first request a user token from the sample backend which it will then pass 
 Requirements:
 - Install the expo cli: https://docs.expo.dev/get-started/installation/
 
+Start React Native App:
 ```shell
 cd sample-app
 yarn
