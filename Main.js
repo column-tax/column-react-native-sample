@@ -1,25 +1,14 @@
 import React, { Component } from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { encode as btoa } from "base-64";
 
-const token = "<token>";
-
-// Sandbox URL: "https://app-sandbox.columnapi.com/tax-filing"
-// Production URL: "https://app.columnapi.com/tax-filing"
-const buildUrl = (
-  token,
-  baseUrl = "https://app-sandbox.columnapi.com/tax-filing"
-) => {
-  let paramString = JSON.stringify({ token: token });
-  let params = btoa(paramString);
-  return `${baseUrl}?params=${params}`;
-};
+// Either a Sandbox or Production SDK URL
+const sdkUrl = "<url>";
 
 export default class Main extends Component {
   openColumnModule = () => {
     this.props.navigation.navigate("ColumnModuleView", {
-      url: buildUrl(token),
+      url: sdkUrl,
     });
   };
 
