@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { StyleSheet, View } from "react-native";
+import { Linking, StyleSheet, View } from "react-native";
 import { WebView } from "react-native-webview";
+import "react-native-url-polyfill/auto";
 
 export default class ColumnModuleView extends Component {
   onMessageReceiver = (eventDataString) => {
@@ -20,6 +21,22 @@ export default class ColumnModuleView extends Component {
           onMessage={(event) => this.onMessageReceiver(event.nativeEvent.data)}
           source={{
             uri: this.props.route.params.url,
+          }}
+          setSupportMultipleWindows={false}
+          onShouldStartLoadWithRequest={(request) => {
+            const allowedDomains = [
+              "localhost",
+              "columnapi.com",
+              "env.bz"
+            ];
+            const hostname = new URL(request.url).hostname;
+
+            if (allowedDomains.find((d) => hostname.endsWith(d))) {
+              return true;
+            } else {
+              Linking.openURL(request.url).catch(() => null);
+              return false;
+            }
           }}
         />
       </View>
