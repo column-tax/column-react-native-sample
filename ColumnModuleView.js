@@ -31,7 +31,7 @@ export default class ColumnModuleView extends Component {
             ];
             const hostname = new URL(request.url).hostname;
 
-            if (allowedDomains.find((d) => hostname.endsWith(d))) {
+            if (allowedDomains.find((d) => hostname === d || hostname.endsWith(`.${d}`))) {
               return true;
             } else {
               Linking.openURL(request.url).catch(() => null);
