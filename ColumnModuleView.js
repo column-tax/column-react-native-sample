@@ -27,6 +27,14 @@ export default class ColumnModuleView extends Component {
           }}
           setSupportMultipleWindows={false}
           onShouldStartLoadWithRequest={(request) => {
+            // Always open iframes within the Webview
+            // Otherwise, the iframe may open
+            // within the external browser.
+            if (!request.isTopFrame) return true;
+
+            // Only allow certain domains to take over the webview
+            // This allows us to open certain links externally, like
+            // the IRS website.
             const allowedDomains = [
               "localhost",
               "columnapi.com",
@@ -38,6 +46,8 @@ export default class ColumnModuleView extends Component {
               return true;
             } else {
               Linking.openURL(request.url).catch(() => null);
+
+              // Prevent the external link from opening within the webview
               return false;
             }
           }}
