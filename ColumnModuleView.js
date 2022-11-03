@@ -40,9 +40,13 @@ export default class ColumnModuleView extends Component {
               "columnapi.com",
               "env.bz"
             ];
-            const hostname = new URL(request.url).hostname;
+            const url = new URL(request.url);
 
-            if (allowedDomains.find((d) => hostname === d || hostname.endsWith(`.${d}`))) {
+            // Mechanism to open some links on our domain externally
+            const isExternalLink = url.searchParams.get("columntax-external-link") === "true";
+            const hostname = url.hostname;
+
+            if (allowedDomains.find((d) => hostname === d || hostname.endsWith(`.${d}`)) && !isExternalLink) {
               return true;
             } else {
               Linking.openURL(request.url).catch(() => null);
