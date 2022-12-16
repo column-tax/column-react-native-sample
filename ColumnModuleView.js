@@ -21,6 +21,7 @@ export default class ColumnModuleView extends Component {
     return (
       <View style={styles.view}>
         <WebView
+          javaScriptCanOpenWindowsAutomatically={true}
           onMessage={(event) => this.onMessageReceiver(event.nativeEvent.data)}
           source={{
             uri: this.props.route.params.url,
