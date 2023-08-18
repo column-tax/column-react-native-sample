@@ -38,6 +38,7 @@ export default class ColumnModuleView extends Component {
             // the IRS website.
             const allowedDomains = [
               "localhost",
+              "192.168.1.43",
               "columnapi.com",
               "env.bz"
             ];
