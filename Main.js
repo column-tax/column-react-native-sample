@@ -53,7 +53,7 @@ export default class Main extends Component {
       <View style={styles.view}>
         <Text style={{ marginBottom: 16, color: primaryColor }}>Use the input below for custom column url</Text>
         <TextInput
-          value={this.state.inputValue && this.state.value.length < 1 ? this.state : null}
+          value={this.state.inputValue && this.state.inputValue.length < 1 ? this.state : null}
           onChangeText={(inputText) => this.setState({ inputValue: inputText, url: inputText, error: null })}
           placeholder={`Copied text: ${this.state.copiedText}`}
           style={styles.input}
@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "#fff",
-    fontWeight: 600,
+    fontWeight: "bold",
     fontSize: 16,
   },
   presetUrlBox: {
