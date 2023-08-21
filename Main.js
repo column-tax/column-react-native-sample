@@ -9,7 +9,8 @@ const sdkUrl = "https://app-sandbox.columnapi.com/tax-filing?params=eyJ0b2tlbiI6
 
 const primaryColor = "#0070ff";
 const primaryColorLight = "#2090ff";
-const lightGrey = "#e0e0e0";
+const primaryColorSuperlight = "#e0e0ff";
+const lightGrey = "#f0f0f0";
 
 SplashScreen.preventAutoHideAsync();
 export default class Main extends Component {
@@ -63,7 +64,7 @@ export default class Main extends Component {
           onPress={this.openCustom}
           style={{ marginTop: 16, ...styles.touchable}}
         >
-          <Text style={styles.text}>Open Column</Text>
+          <Text style={styles.text}>Open Column url</Text>
         </TouchableOpacity>
         <Text style={{ marginTop: 8, marginBottom: 8, color: "#aa0000", lineHeight: 16 }}>&nbsp;{this.state.error}</Text>
         <Text style={{ marginTop: 32, marginBottom: 64, color: primaryColor }}>or</Text>
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
     width: 320,
     height: 100,
     fontSize: 16,
-    borderColor: primaryColor,
+    borderColor: primaryColorSuperlight,
     borderStyle: "solid",
     borderRadius: 3,
     borderWidth: 1,
@@ -104,9 +105,9 @@ const styles = StyleSheet.create({
     backgroundColor: primaryColor,
     display: "flex",
     height: 50,
-    width: 250,
+    width: 300,
     justifyContent: "center",
-    borderRadius: 8,
+    borderRadius: "50%",
   },
   text: {
     color: "#fff",
@@ -115,9 +116,9 @@ const styles = StyleSheet.create({
   },
   presetUrlBox: {
     borderStyle: "solid",
-    borderRadius: 3,
+    borderRadius: 5,
     borderWidth: 1,
-    borderColor: primaryColorLight,
+    borderColor: primaryColorSuperlight,
     width: 320,
     marginTop: 16,
     fontSize: 9,
