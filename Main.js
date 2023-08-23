@@ -5,7 +5,7 @@ import * as Clipboard from 'expo-clipboard';
 import * as SplashScreen from 'expo-splash-screen';
 
 // Either a Local, Sandbox or Production SDK URL
-const sdkUrl = "https://app-sandbox.columnapi.com/tax-filing?params=eyJ0b2tlbiI6ImV5SmhiR2NpT2lKSVV6STFOaUo5LmV5Sm9iM04wWDJKaGJtdGZkWE5sY2w5cFpHVnVkR2xtYVdWeUlqb2lNemRtWTJKbE5qQXRNR1psWWkwME9EQmxMV0kxTUdRdE9ERTNaREpoWWpCbU1UUmhJaXdpYUc5emRGOWlZVzVyWDJsa0lqb3hMQ0psZUhBaU9qRTNNREF4TkRFd05EVjkuam16XzFDWVdoM19Ya3pjZk1zeE1XalZpcGNDLWVIckZ0dnpWRVRiVUotUSJ9&target=eyJpZCI6IlRZMjI6OlNjcmVlbnM6OkhvbWVTY3JlZW4iLCJwYXlsb2FkIjp7fX0%3D";
+const sdkUrl = "<url>";
 
 const primaryColor = "#0070ff";
 const primaryColorLight = "#2090ff";
