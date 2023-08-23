@@ -8,10 +8,7 @@ export default class ColumnModuleView extends Component {
     let eventData = JSON.parse(eventDataString);
 
     if (eventData.name === "column-on-close") {
-      if ( this.props.navigation.canGoBack() )
-        this.props.navigation.goBack();
-      else
-        BackHandler.exitApp();
+      this.props.navigation.goBack();
     } else if (eventData.name == "column-on-user-event") {
       // Insert your analytics/event recording here
       console.log(eventData.userEvent);

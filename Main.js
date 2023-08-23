@@ -30,10 +30,6 @@ export default class Main extends Component {
     this.setState({ copiedText: text, url: text });
   };
 
-  // componentWillMount() {
-  //   this.fetchCopiedText();
-  // };
-
   componentDidMount() {
     this.fetchCopiedText();
     SplashScreen.hideAsync();
@@ -107,7 +103,7 @@ const styles = StyleSheet.create({
     height: 50,
     width: 300,
     justifyContent: "center",
-    borderRadius: "50%",
+    borderRadius: 25,
   },
   text: {
     color: "#fff",
