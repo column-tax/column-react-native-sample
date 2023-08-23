@@ -11,10 +11,10 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <StatusBar hidden={true} />
+      <StatusBar hidden={false} />
       <Stack.Navigator>
         <Stack.Screen
-          name="Main"
+          name="CT WebView Tester"
           component={Main}
         />
         <Stack.Screen
