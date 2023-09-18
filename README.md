@@ -9,6 +9,11 @@ See the full documentation here: https://docs.columntax.com/
 
 ## Run the app
 
+The Column Tax module is opened via WebView in `ColumnModuleView.js`.
+
+In this sample, replace the placeholder `"<url>"` in `Main.js` with a Column Tax URL
+created through the [API](https://docs.columntax.com/reference/express-initialize-tax-filing).
+
 ```
 expo start
 ```
