@@ -9,7 +9,7 @@ export default class ColumnModuleView extends Component {
 
     if (eventData.name === "column-on-close") {
       this.props.navigation.goBack();
-    } else if (eventData.name == "column-on-user-event") {
+    } else if (eventData.name === "column-on-user-event") {
       // Insert your analytics/event recording here
       console.log(eventData.userEvent);
     } else {
