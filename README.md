@@ -17,3 +17,10 @@ created through the [API](https://docs.columntax.com/reference/express-initializ
 ```
 expo start
 ```
+
+## Building the app
+
+1. Follow the instructions to [install Expo's EAS](https://docs.expo.dev/eas-update/getting-started/)
+1. You may need to [create an EAS account](https://expo.dev/signup)
+1. Login with `eas login`
+1. Run `eas build -p android --profile preview`
