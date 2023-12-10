@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Linking, StyleSheet, View } from "react-native";
+import { Linking, StyleSheet, SafeAreaView } from "react-native";
 import { WebView } from "react-native-webview";
 import "react-native-url-polyfill/auto";
 
@@ -19,7 +19,7 @@ export default class ColumnModuleView extends Component {
 
   render() {
     return (
-      <View style={styles.view}>
+      <SafeAreaView style={styles.view}>
         <WebView
           javaScriptCanOpenWindowsAutomatically={true}
           onMessage={(event) => this.onMessageReceiver(event.nativeEvent.data)}
@@ -57,7 +57,7 @@ export default class ColumnModuleView extends Component {
             }
           }}
         />
-      </View>
+      </SafeAreaView>
     );
   }
 }
