@@ -1177,6 +1177,11 @@
     "@babel/helper-validator-identifier" "^7.24.6"
     to-fast-properties "^2.0.0"
 
+"@columntax/column-tax-react-native-sdk@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@columntax/column-tax-react-native-sdk/-/column-tax-react-native-sdk-1.0.1.tgz#45002c82886f1d55d4c368fca32c37dcd5e2d81b"
+  integrity sha512-vM6DnD8EEBIpREPOzaZGb3IVu+q0Lri0f5dyra9kYUzTc10lAW0P1lDsa+ynTCn8x14DoN7ar1wwDH94vGywcQ==
+
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"
   resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
@@ -2792,11 +2797,6 @@ colorette@^1.0.7:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.4.0.tgz#5190fbb87276259a86ad700bff2c6d6faa3fca40"
   integrity sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g==
-
-column-tax-react-native-package@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/column-tax-react-native-package/-/column-tax-react-native-package-1.0.0.tgz#33b50b19bfd38dfe6ce8b0b0bcf23946c6f1ca1d"
-  integrity sha512-A1h8RcJWZ/TgAzpcX/1w44FQpvsziSnSjhmi27UbQHuhKkgDq3VpZZPxLOC14xerrtRl89jtXD580WJPllQFfA==
 
 combined-stream@^1.0.8:
   version "1.0.8"
