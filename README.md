@@ -2,18 +2,8 @@
 
 See the full documentation here: https://docs.columntax.com/
 
-## First-time set up
+This has two sample applications, both built using Expo.
 
-1. Install the expo cli: https://docs.expo.dev/get-started/installation/
-1. Install dependencies: run `yarn`
+`/react_native_example_with_sdk` (recommended) -- uses our SDK, hosted at https://www.npmjs.com/package/column-tax-react-native-package?activeTab=versions
 
-## Run the app
-
-The Column Tax module is opened via WebView in [ColumnModuleView.js](https://github.com/column-tax/column-react-native-sample/blob/main/ColumnModuleView.js).
-
-In this sample, replace the placeholder `"<url>"` in [Main.js](https://github.com/column-tax/column-react-native-sample/blob/main/Main.js#L8) with a Column Tax URL
-created through the [API](https://docs.columntax.com/reference/express-initialize-tax-filing).
-
-```
-expo start
-```
+`/react_native_example_without_sdk` (not recommended) -- implements Column Tax Module without the SD
