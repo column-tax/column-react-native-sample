@@ -3,7 +3,7 @@ import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-nativ
 import { StatusBar } from "expo-status-bar";
 import * as Clipboard from 'expo-clipboard';
 import * as SplashScreen from 'expo-splash-screen';
-import { ColumnTaxFile } from '@columntax/column-tax-react-native-sdk';
+import { ColumnTaxFile, ColumnTaxEnvironment } from '@columntax/column-tax-react-native-sdk';
 
 const primaryColor = "#0070ff";
 const primaryColorSuperlight = "#e0e0ff";
@@ -61,7 +61,7 @@ export default class Main extends Component {
           <ColumnTaxFile
             userUrl={this.state.url}
             handleClose={() => { this.setState({ isVisible: false }) }}
-            environment="sandbox" // one of 'sandbox' or 'production'
+            environment={ColumnTaxEnvironment.SANDBOX}
           />
         )}
         <StatusBar style="auto" />
