@@ -3,7 +3,7 @@ import { StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-nativ
 import { StatusBar } from "expo-status-bar";
 import * as Clipboard from 'expo-clipboard';
 import * as SplashScreen from 'expo-splash-screen';
-import { ColumnTaxFile } from 'column-tax-react-native-package';
+import { ColumnTaxFile } from '@columntax/column-tax-react-native-sdk';
 
 const primaryColor = "#0070ff";
 const primaryColorSuperlight = "#e0e0ff";
@@ -39,10 +39,6 @@ export default class Main extends Component {
     this.setState({ isVisible: true });
   };
 
-  handleClose = () => {
-    this.setState({ isVisible: false });
-  };
-
   render() {
     return (
       <View style={styles.view}>
@@ -61,11 +57,12 @@ export default class Main extends Component {
           <Text style={styles.text}>Open Column url</Text>
         </TouchableOpacity>
         <Text style={{ marginTop: 8, marginBottom: 8, color: "#aa0000", lineHeight: 16 }}>&nbsp;{this.state.error}</Text>
-        <ColumnTaxFile
-          url={this.state.url}
-          isVisible={this.state.isVisible}
-          handleClose={this.handleClose}
-        />
+        {this.state.isVisible && (
+          <ColumnTaxFile
+            userUrl={this.state.url}
+            handleClose={() => { this.setState({ isVisible: false }) }}
+          />
+        )}
         <StatusBar style="auto" />
       </View>
     );
