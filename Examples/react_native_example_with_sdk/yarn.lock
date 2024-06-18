@@ -1177,10 +1177,10 @@
     "@babel/helper-validator-identifier" "^7.24.6"
     to-fast-properties "^2.0.0"
 
-"@columntax/column-tax-react-native-sdk@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@columntax/column-tax-react-native-sdk/-/column-tax-react-native-sdk-1.0.1.tgz#45002c82886f1d55d4c368fca32c37dcd5e2d81b"
-  integrity sha512-vM6DnD8EEBIpREPOzaZGb3IVu+q0Lri0f5dyra9kYUzTc10lAW0P1lDsa+ynTCn8x14DoN7ar1wwDH94vGywcQ==
+"@columntax/column-tax-react-native-sdk@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@columntax/column-tax-react-native-sdk/-/column-tax-react-native-sdk-1.1.0.tgz#abab1e03e7eb3ed81579990db3fbf6d1d71e47ff"
+  integrity sha512-wfVzSV5sFXsUcV8HPGirfRoSrLa3tEc3wgf/Bz79+Dmf0SpWjBe+xGZeiV+0L36bwNnBS4DfvaHTWXpoeC+q4A==
 
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"
