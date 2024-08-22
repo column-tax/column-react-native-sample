@@ -2,7 +2,7 @@
   "expo": {
     "name": "column-react-native",
     "slug": "column-react-native",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -20,17 +20,25 @@
       "supportsTablet": true,
       "infoPlist": {
         "NSCameraUsageDescription": "This app uses the camera to upload Tax Documents"
-      }
+      },
+      "bundleIdentifier": "com.columntax.column-react-native"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "permissions": ["CAMERA"]
+      "permissions": [
+        "CAMERA"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "923fa35d-c7f4-43d0-8f1b-de26a2fada11"
+      }
     }
   }
 }
