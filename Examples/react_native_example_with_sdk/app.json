@@ -21,7 +21,7 @@
       "infoPlist": {
         "NSCameraUsageDescription": "This app uses the camera to upload Tax Documents"
       },
-      "bundleIdentifier": "com.columntax.column-react-native"
+      "bundleIdentifier": "com.columntax.columntax-react-native"
     },
     "android": {
       "adaptiveIcon": {
