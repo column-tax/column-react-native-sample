@@ -2,8 +2,9 @@
 
 See the full documentation here: https://docs.columntax.com/
 
-This has two sample applications, both built using Expo:
+This has three sample applications, all built using Expo:
+`/react_native_typescript_example_with_sdk` (recommended) - uses the Column Tax SDK (<https://www.npmjs.com/package/column-tax-react-native-package?activeTab=versions>) with Typescript
 
-`/react_native_example_with_sdk` (recommended) -- uses our SDK, hosted at https://www.npmjs.com/package/column-tax-react-native-package?activeTab=versions
+`/react_native_example_with_sdk` (recommended) -- uses the Column Tax SDK (<https://www.npmjs.com/package/column-tax-react-native-package?activeTab=versions>)
 
-`/react_native_example_without_sdk` (not recommended) -- implements Column Tax Module without the SDK.
+`/react_native_example_without_sdk` (not recommended) -- implements the Column Tax Module without using the SDK
